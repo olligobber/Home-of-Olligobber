@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Home of Olligobber</title>
+		<script>
+			function onload() {
+				var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+				var e = document.getElementById("container");
+				if (w >= h) {
+					e.style.width = String(h-10)+"px";
+					e.style.height = String(h-10)+"px";
+					e.style.left = String((w-h-10)/2)+"px";
+					e.style.top = "5px";
+				} else {
+					e.style.width = String(w-10)+"px";
+					e.style.height = String(w-10)+"px";
+					e.style.top = String((h-w-10)/2)+"px";
+					e.style.left = "5px";
+				}
+				return;
+			}
+		</script>
+	</head>
+	<body onload="onload()" onresize="onload()">
+		<div id="container" style="position:fixed">
+			<img src="Compo.png" style="width:50%;border:0;position:absolute;left:0%">
+			<img src="Ello.png" style="width:50%;border:0;position:absolute;left:50%">
+			<img src="WIP.png" style="width:50%;border:0;position:absolute;top:50%;left:0%">
+			<img src="Music.png" style="width:50%;border:0;position:absolute;left:50%;top:50%">
+			<a href="http://ludumdare.com/compo/author/olligobber/"><img src="CompoText.png" style="width:50%;border:0;position:absolute;left:0%"></a>
+			<a href="https://ello.co/olligobber/"><img src="ElloText.png" style="width:50%;border:0;position:absolute;left:50%"></a>
+			<a href="https://github.com/olligobber"><img src="WIPText.png" style="width:50%;border:0;position:absolute;top:50%;left:0%"></a>
+			<a href="https://soundcloud.com/olligobber"><img src="MusicText.png" style="width:50%;border:0;position:absolute;left:50%;top:50%"></a>
+			<img src="Logo.png" style="height:50%;border:0;position:absolute;top:25%;left:25%;pointer-events:none">
+		</div>
+	</body>
+</html>
