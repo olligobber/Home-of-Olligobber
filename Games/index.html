@@ -1,37 +1,87 @@
 <html>
   <head>
     <title>Games by Olligobber</title>
-    <link rel="icon" href="./Logo.png">
+    <link rel="icon" href="../Logo.png">
     <script>
       function onload() {
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var t = document.getElementsByTagName("table").style;
+        var l = document.getElementsByTagName("img").style;
+        var c = document.getElementsByClassName("icon").style;
+        var p = document.getElementsByTagName("p").style;
+        if (w>1000) w = 1000;
+        var wf = (w/5).toFixed(0);
+        console.log(w);
+        console.log(wf);
+        for (var i in t) i.width = w;
+        for (var i in l) {
+          i.width = wf;
+          i.height = wf;
+        }
+        for (var i in c) i.width = wf;
+        for (var i in p) i.fontSize = wf;
         return;
       }
     </script>
     <style>
-      .icon {
-        width:200px;
-      }
-      .text {
-        width:600px;
-      }
       p {
-        font-size:200%;
+        font-size: 200%;
+        line-height: 150%;
+        font-family: sans-serif;
+      }
+      a:link, a:visited, a:link:active, a:visited:active {
+        color: #000000;
+        text-decoration: none;
+      }
+      table {
+        margin-left:auto;
+        margin-right: auto;
+        width: 1000px;
       }
     </style>
   </head>
   <body onload="onload()" onresize="onload()">
-    <table border=0 style="width:1000px">
+    <table>
       <tr>
         <td class="icon">
           <a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=1888">
             <img src="./LD34.png"></a>
-        </td>
-        <td class="text">
+        </td><td colspan="2">
           <a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=1888">
-            <p>Ascending Roots<br>
+            <p style="text-align: left">Ascending Roots<br>
+              Ludum Dare 34: "Growth"<br>Created with a team of 5</p>
+          </a>
         </td>
-        <td style="icon">
-
+      </tr><tr>
+        <td colspan="2">
+          <a href="http://ludumdare.com/compo/minild-57/?action=preview&uid=2315">
+            <p style="text-align: right">Game Game 2: Electric Scooter<br>
+              Mini LD 57: "Reverse"<br>Created in reverse order</p>
+          </a>
+        </td><td class="icon">
+          <a href="http://ludumdare.com/compo/minild-57/?action=preview&uid=2315">
+            <img src="./MiniLD57.png"></a>
+        </td>
+      </tr><tr>
+        <td class="icon">
+          <a href="http://ludumdare.com/compo/minild-56/?action=preview&uid=25440">
+            <img src="./MiniLD56.png"></a>
+        </td><td colspan="2">
+          <a href="http://ludumdare.com/compo/minild-56/?action=preview&uid=25440">
+            <p style="text-align: left">This Wharf<br>
+              Mini LD 56: "Pick 'n' Mix 2"<br>Enjoy the scenery while fishing
+          </p></a>
+        </td>
+      </tr><tr>
+        <td colspan="2">
+          <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=25440">
+            <p style="text-align: right">Simple Geometry<br>
+              Ludum Dare 31: "Entire Game on One Screen"<br>
+              My First Game</p>
+          </a>
+        </td><td class="icon">
+          <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=25440">
+            <img src="./LD31.png"></a>
         </td>
       </tr>
     </table>
