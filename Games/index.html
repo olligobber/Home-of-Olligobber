@@ -11,8 +11,6 @@
         var p = document.getElementsByTagName("p").style;
         if (w>1000) w = 1000;
         var wf = (w/5).toFixed(0);
-        console.log(w);
-        console.log(wf);
         for (var i in t) i.width = w;
         for (var i in l) {
           i.width = wf;
@@ -24,6 +22,9 @@
       }
     </script>
     <style>
+      .icon {
+        width: 200px;
+      }
       p {
         font-size: 200%;
         line-height: 150%;
