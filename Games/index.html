@@ -10,7 +10,8 @@
         var c = document.getElementsByClassName("icon");
         var p = document.getElementsByTagName("p");
         var n = document.getElementById("nav");
-        if (w>1000) w = 1000;
+        if (w>1050) w = 1050;
+        w -= 50;
         t.style.width = w;
         for (var i = 0; i < l.length; i++) {
           l[i].style.width = w/5;
@@ -24,7 +25,14 @@
       }
     </script>
     <style>
+      .icon {
+        width: 200;
+      }
+      .text {
+        padding: 0.5%;
+      }
       p {
+        font-size: 30;
         line-height: 150%;
         font-family: sans-serif;
       }
@@ -35,6 +43,7 @@
       table {
         margin-left: auto;
         margin-right: auto;
+        width: 1000;
       }
     </style>
   </head>
@@ -49,21 +58,21 @@
             <img src="./LD34.png" class="ico">
           </a>
         </td>
-        <td colspan="2">
+        <td colspan="2" class="text">
           <a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=1888">
-            <p style="text-align: left">Ascending Roots
-              <br>Ludum Dare 34: "Growth"
-              <br>Created with a team of 5
+            <p style="text-align: left">Ascending Roots<br>
+              Ludum Dare 34: "Growth"<br>
+              Created with a team of 5
             </p>
           </a>
         </td>
       </tr>
       <tr>
-        <td colspan="2">
+        <td colspan="2" class="text">
           <a href="http://ludumdare.com/compo/minild-57/?action=preview&uid=2315">
-            <p style="text-align: right">Game Game 2: Electric Scooter
-              <br>Mini LD 57: "Reverse"
-              <br>Developed in reverse order
+            <p style="text-align: right">Game Game 2: Electric Scooter<br>
+              MiniLD #57: "Reverse"<br>
+              Developed in reverse order
             </p>
           </a>
         </td><td class="icon">
@@ -78,21 +87,21 @@
             <img src="./MiniLD56.png" class="ico">
           </a>
         </td>
-        <td colspan="2">
+        <td colspan="2" class="text">
           <a href="http://ludumdare.com/compo/minild-56/?action=preview&uid=25440">
-            <p style="text-align: left">This Wharf
-              <br>Mini LD 56: "Pick 'n' Mix 2"
-              <br>Enjoy the scenery while fishing
+            <p style="text-align: left">This Wharf<br>
+              MiniLD #56: "Pick 'n' Mix 2"<br>
+              Enjoy the scenery while fishing
             </p>
           </a>
         </td>
       </tr>
       <tr>
-        <td colspan="2">
+        <td colspan="2" class="text">
           <a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=25440">
-            <p style="text-align: right">Simple Geometry
-              <br>Ludum Dare 31: "Entire Game on One Screen"
-              <br>My First Game
+            <p style="text-align: right">Simple Geometry<br>
+              Ludum Dare 31: "Entire Game on One Screen"<br>
+              My First Game, made in only 48 hours
             </p>
           </a>
         </td>
